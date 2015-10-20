@@ -11,9 +11,9 @@ func Ratio(s1, s2 string) float32 {
 	if s1 == "" || s2 == "" {
 		return 0
 	}
-	lensum := utf8.RuneCountInString(s1) + utf8.RuneCountInString(s2)
+	len := utf8.RuneCountInString(s1) + utf8.RuneCountInString(s2)
 	dist := LevenshteinDistance(processString(s1), processString(s2))
-	return (float32(lensum-dist) / float32(lensum))
+	return 1 - (float32(dist) / float32(len))
 }
 
 //PartialRatio allow you to calculate the "best partial" ratio. It takes
