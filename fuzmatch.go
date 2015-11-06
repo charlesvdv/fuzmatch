@@ -1,6 +1,9 @@
 package fuzmatch
 
-import "strings"
+import (
+	"strings"
+	"unicode/utf8"
+)
 
 //Ratio allow you to calculate the pourcentage of variance between two strings
 //if the two strings are equals the function returns 1.
@@ -8,8 +11,9 @@ func Ratio(s1, s2 string) float32 {
 	if s1 == "" || s2 == "" {
 		return 0
 	}
+	len := utf8.RuneCountInString(s1) + utf8.RuneCountInString(s2)
 	dist := LevenshteinDistance(processString(s1), processString(s2))
-	return (float32(dist) / float32(maxLenString(s1, s2)))
+	return 1 - (float32(dist) / float32(len))
 }
 
 //PartialRatio allow you to calculate the "best partial" ratio. It takes
