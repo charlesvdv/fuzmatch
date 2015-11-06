@@ -1,5 +1,5 @@
-# FuzMatch, an approximate string matching in golang
-
+# FuzMatch, an approximate string matching library in golang
+[![Build Status](https://travis-ci.org/charlesvdv/fuzmatch.svg?branch=master)](https://travis-ci.org/charlesvdv/fuzmatch)
 ### About
 
 fuzmatch is a library inspired by the fuzzywuzzy python library. I've used the same function name so if you want to know more about how the function works, go see the [SeatGeek blog](http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/) post about fuzzywuzzy.
