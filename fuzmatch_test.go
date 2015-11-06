@@ -17,12 +17,12 @@ var testLevenshtein = []struct {
 }
 
 var testRa = []struct {
-	n      float32
+	n      int
 	s1, s2 string
 }{
 	{0, "", ""},
-	{1, "test", "test"},
-	{1, "!- ' () test!!", "test"},
+	{100, "test", "test"},
+	{100, "!- ' () test!!", "test"},
 	{0, "45 [] # ~", ""},
 }
 

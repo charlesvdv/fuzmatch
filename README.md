@@ -20,22 +20,22 @@ You need of course to set your GOPATH, otherwise you will have an error.
 A simple ratio.
 
     fuzmatch.Ratio("book", "back")
-    "0.75"
+    "75"
 
 A partial ratio.
 
     fuzmatch.PartialRatio("hello world!","hello")
-    "1"
+    "100"
 
 A token sort ratio.
 
     fuzmatch.TokenSortRatio("Rust vs Golang", "Golang vs Rust")
-    "1"
+    "100"
 
 A token set ratio.
 
     fuzmatch.TokenSetRatio("Rust from Mozilla vs Go from Google's employees", "Rust vs Go")
-    "1"
+    "100"
 
 
 If you want more informations on how the function works, go see the [SeatGeek blog](http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/).

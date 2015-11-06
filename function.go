@@ -19,7 +19,7 @@ func contains(arr []string, str string) bool {
 }
 
 //return the maximum from 3 floats
-func maximum(a, b, c float32) float32 {
+func maximum(a, b, c int) int {
 	if a >= b && a >= c {
 		return a
 	} else if b >= c {
