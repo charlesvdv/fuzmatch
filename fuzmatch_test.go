@@ -3,7 +3,7 @@ package fuzmatch_test
 import (
 	"testing"
 
-	"../fuzmatch"
+	"github.com/charlesvdv/fuzmatch"
 )
 
 var testLevenshtein = []struct {
