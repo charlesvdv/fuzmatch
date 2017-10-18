@@ -42,7 +42,7 @@ func processString(s string) string {
 	space := false
 	var str []rune
 	for _, v := range strings.ToLower(s) {
-		if unicode.IsLetter(v) {
+		if unicode.IsLetter(v) || unicode.IsNumber(v){
 			space = false
 			str = append(str, v)
 		} else if !space {
